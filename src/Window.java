@@ -14,8 +14,8 @@ public class Window extends JFrame {
 	public void displayGUI() {
 		Window window = new Window();
 
-		// Create the board
-		Board board = new Board();
+		// Create the board, avoid to exceed 30
+		final Board board = new Board(5);
 		
 		board.configure();
 		window.configure(board);
